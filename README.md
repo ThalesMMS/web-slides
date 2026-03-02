@@ -57,6 +57,18 @@ web-slides/
 
 ## How to Add a Slide
 
+### Option A — AI Agent (recommended)
+
+This project includes a skill at `skills/web-slides-presentation-builder/` designed for AI agents (Windsurf Cascade, ChatGPT, Copilot, etc.). Simply describe what you need:
+
+> *"Create a new slide about Q2 revenue with a bar chart image and three bullet points. Use the assets I provided in the assets folder."*
+
+The skill guides the agent through layout selection, canvas space budgeting, media sizing, manifest updates, and QA — producing production-ready slides that follow all project conventions.
+
+See `skills/web-slides-presentation-builder/SKILL.md` for details.
+
+### Option B — Manual
+
 1. Create the slide folder and file:
    ```
    main/slides/05/slide-05.html
@@ -82,6 +94,11 @@ web-slides/
      ...
      'main/slides/05/slide-05.html', // ← new
    ]
+   ```
+
+   Or use the helper script:
+   ```bash
+   python3 skills/web-slides-presentation-builder/scripts/add_slide.py --template content
    ```
 
 ### Available slide templates
