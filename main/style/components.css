@@ -191,6 +191,9 @@
 
 .slide-progress__segment {
   flex: 1;
+  height: 100%;
+  min-height: 4px;
+  appearance: none;
   background: var(--color-border);
   border-radius: 2px;
   cursor: pointer;
