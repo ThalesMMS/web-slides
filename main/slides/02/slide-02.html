@@ -1,0 +1,35 @@
+<!-- slide-02.html — Content slide with bullet list + media -->
+<!-- HTML fragment: loaded by app.js, not a full page. -->
+
+<div class="slide slide-content">
+
+  <div data-include="main/components/slide-header.html"></div>
+  <div data-include="main/components/slide-progress.html"></div>
+
+  <main class="slide-main" style="gap: 28px;">
+    <div class="title-box">
+      <h2 class="title">Slide Title</h2>
+      <div class="accent-bar"></div>
+    </div>
+
+    <ul class="bullet-list">
+      <li>First important point of the presentation</li>
+      <li>Second point with relevant additional information</li>
+      <li>Third highlight point and call to action</li>
+    </ul>
+
+    <div style="display: flex; gap: 32px; align-items: center;">
+      <div class="resized-image" style="--width: 340px; --height: 332px;">
+        <img src="main/assets/image.png" alt="Slide image">
+      </div>
+      <div class="resized-video" style="--width: 400px; --height: 225px;">
+        <video src="main/assets/video.mp4" controls preload="metadata">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <div data-include="main/components/slide-footer.html"></div>
+
+</div>

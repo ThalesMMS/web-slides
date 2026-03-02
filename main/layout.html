@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Preview</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%230055cc'/><path d='M4 5h8M4 8h6M4 11h4' stroke='white' stroke-width='1.5' stroke-linecap='round'/></svg>">
+
+  <!--
+    layout.html — Standalone dev preview for a single slide.
+
+    Usage:
+      Serve the project root and open:
+        main/layout.html?slide=main/slides/01/slide-01.html
+
+    This file loads config.js and app.js in 'preview' mode.
+    No manifest, no hash navigation — just renders one slide.
+
+    Tip: hot-reload with Live Server and keep this open while
+    editing a slide or component to see changes instantly.
+  -->
+
+  <!-- Styles (same as index.html, paths relative to project root via <base>) -->
+  <base href="../">
+  <link rel="stylesheet" href="main/style/base.css">
+  <link rel="stylesheet" href="main/style/themes.css">
+  <link rel="stylesheet" href="main/style/components.css">
+
+  <style>
+    /* Preview-specific chrome */
+    body.is-preview #slide-frame {
+      margin-top: 40px;
+    }
+
+    #preview-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 16px;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(10px);
+      font-family: monospace;
+      font-size: 12px;
+      color: #aaa;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    #preview-bar .badge {
+      background: #f59e0b;
+      color: #000;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 10px;
+      letter-spacing: 0.05em;
+    }
+
+    #preview-path {
+      color: #e0e0e0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  </style>
+
+  <!-- Set preview mode BEFORE app.js loads -->
+  <script>window.__MODE__ = 'preview'</script>
+  <script src="config.js"></script>
+</head>
+<body class="is-preview">
+
+  <!-- Preview toolbar -->
+  <div id="preview-bar">
+    <span class="badge">PREVIEW</span>
+    <span id="preview-path">loading…</span>
+  </div>
+
+  <!-- Slide frame: same structure as index.html -->
+  <div id="slide-frame">
+    <div id="slide-viewport"></div>
+  </div>
+
+  <!-- SPA engine in preview mode -->
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+/*
+ * theme-corporate.css - Corporate/institutional preset
+ *
+ * How to use:
+ *   1. Copy the desired block to main/style/themes.css
+ *   2. Replace the existing .theme-light or .theme-dark block
+ */
+
+.theme-light {
+  --color-bg:            #ffffff;
+  --color-bg-outer:      #c8cdd6;
+  --color-surface:       #f0f2f5;
+  --color-surface-alt:   #e4e8ee;
+  --color-text-primary:  #0a1929;
+  --color-text-secondary:#3a5068;
+  --color-text-muted:    #7a8fa0;
+  --color-accent:        #003d82;
+  --color-accent-hover:  #002d61;
+  --color-border:        #d0d8e4;
+  --color-shadow:        rgba(0, 30, 80, 0.10);
+  --font-family:         'Georgia', 'Times New Roman', serif;
+}
+
+.theme-dark {
+  --color-bg:            #0a1929;
+  --color-bg-outer:      #04101d;
+  --color-surface:       #0d2137;
+  --color-surface-alt:   #112845;
+  --color-text-primary:  #e8f0fa;
+  --color-text-secondary:#8aafcc;
+  --color-text-muted:    #486880;
+  --color-accent:        #4da6ff;
+  --color-accent-hover:  #70bbff;
+  --color-border:        #1a3a5c;
+  --color-shadow:        rgba(0, 0, 0, 0.5);
+  --font-family:         'Georgia', 'Times New Roman', serif;
+}

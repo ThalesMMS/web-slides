@@ -1,0 +1,73 @@
+<!--
+  ╔═══════════════════════════════════════════════════════════╗
+  ║  TEMPLATE: Content Slide (available variations)           ║
+  ╠═══════════════════════════════════════════════════════════╣
+  ║  How to use:                                              ║
+  ║  1. Copy the desired block to main/slides/XX/slide.html  ║
+  ║  2. Edit the text                                         ║
+  ║  3. Add to manifest: main/slides/slides.js               ║
+  ╚═══════════════════════════════════════════════════════════╝
+-->
+
+<!-- ═══════════════════════════════════════════════════════════
+     VARIATION A - Bullet list (standard layout)
+     ═══════════════════════════════════════════════════════ -->
+<div class="slide slide-content">
+
+  <div data-include="main/components/slide-header.html"></div>
+  <div data-include="main/components/slide-progress.html"></div>
+
+  <main class="slide-main">
+    <div class="title-box">
+      <h2 class="title">Slide Title</h2>
+      <div class="accent-bar"></div>
+    </div>
+
+    <ul class="bullet-list">
+      <li>First important point</li>
+      <li>Second point with more details</li>
+      <li>Third highlight point</li>
+    </ul>
+  </main>
+
+  <div data-include="main/components/slide-footer.html"></div>
+
+</div>
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  VARIATION B - Two columns (text + image)
+  Remove the block above and uncomment this one.
+  ═══════════════════════════════════════════════════════════
+
+<div class="slide slide-content">
+
+  <div data-include="main/components/slide-header.html"></div>
+  <div data-include="main/components/slide-progress.html"></div>
+
+  <main class="slide-main slide-main--columns">
+
+    <div class="column">
+      <div class="title-box">
+        <h2 class="title">Title</h2>
+        <div class="accent-bar"></div>
+        <p class="subtitle">Complementary description next to the image.</p>
+      </div>
+      <ul class="bullet-list">
+        <li>Point A</li>
+        <li>Point B</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <div class="resized-image" style="--width: 700px; --height: 450px;">
+        <img src="main/assets/placeholder.svg" alt="Image description">
+      </div>
+    </div>
+
+  </main>
+
+  <div data-include="main/components/slide-footer.html"></div>
+
+</div>
+-->

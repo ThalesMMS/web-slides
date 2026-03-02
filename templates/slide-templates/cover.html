@@ -1,0 +1,39 @@
+<!--
+  ╔═══════════════════════════════════════════════════════════╗
+  ║  TEMPLATE: Cover Slide                                    ║
+  ╠═══════════════════════════════════════════════════════════╣
+  ║  How to use:                                              ║
+  ║  1. Copy this file to main/slides/01/slide-01.html       ║
+  ║  2. Edit the text                                         ║
+  ║  3. Add the path to the manifest: main/slides/slides.js  ║
+  ╚═══════════════════════════════════════════════════════════╝
+
+  Notes:
+  - This is an HTML fragment, not a full page.
+  - All data-include paths are relative to the server root.
+  - The .slide-main--center class vertically centers content.
+-->
+
+<div class="slide slide-cover">
+
+  <!-- Shared header (edit in main/components/slide-header.html) -->
+  <div data-include="main/components/slide-header.html"></div>
+  <div data-include="main/components/slide-progress.html"></div>
+
+  <main class="slide-main slide-main--center">
+
+    <div class="title-box">
+      <div class="accent-bar"></div>
+      <h1 class="title">Presentation<br>Title</h1>
+      <p class="subtitle">Subtitle or brief description of the content</p>
+    </div>
+
+    <!-- Presenter information -->
+    <p class="presenter-name">Presenter Name &middot; Date</p>
+
+  </main>
+
+  <!-- Shared footer (edit in main/components/slide-footer.html) -->
+  <div data-include="main/components/slide-footer.html"></div>
+
+</div>

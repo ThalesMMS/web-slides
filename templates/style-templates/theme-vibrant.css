@@ -1,0 +1,37 @@
+/*
+ * theme-vibrant.css - Vibrant/colorful preset (saturated tones)
+ *
+ * How to use:
+ *   1. Copy the desired block to main/style/themes.css
+ *   2. Replace the existing .theme-light or .theme-dark block
+ */
+
+.theme-light {
+  --color-bg:            #fff8f0;
+  --color-bg-outer:      #f0e8e0;
+  --color-surface:       #fff1e2;
+  --color-surface-alt:   #ffe8d0;
+  --color-text-primary:  #1a0a00;
+  --color-text-secondary:#6b3a1f;
+  --color-text-muted:    #b07050;
+  --color-accent:        #e05a00;
+  --color-accent-hover:  #c04800;
+  --color-border:        #f0d8c0;
+  --color-shadow:        rgba(180, 80, 0, 0.12);
+  --font-family:         system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.theme-dark {
+  --color-bg:            #0f0800;
+  --color-bg-outer:      #080400;
+  --color-surface:       #1a1000;
+  --color-surface-alt:   #241800;
+  --color-text-primary:  #fff4e8;
+  --color-text-secondary:#cc9966;
+  --color-text-muted:    #806040;
+  --color-accent:        #ff7a1a;
+  --color-accent-hover:  #ff9940;
+  --color-border:        #2e1e00;
+  --color-shadow:        rgba(0, 0, 0, 0.6);
+  --font-family:         system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}

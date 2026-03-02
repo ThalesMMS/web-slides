@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#e8e8e8"/>
+  <rect x="1" y="1" width="798" height="498" fill="none" stroke="#ccc" stroke-width="2" stroke-dasharray="8 4"/>
+  <!-- Mountain icon -->
+  <polygon points="400,140 280,340 520,340" fill="#bbb"/>
+  <polygon points="500,180 400,340 600,340" fill="#c8c8c8"/>
+  <circle cx="310" cy="195" r="35" fill="#d4d4d4"/>
+  <!-- Label -->
+  <text x="400" y="400" text-anchor="middle" font-family="system-ui, sans-serif"
+        font-size="22" fill="#999" letter-spacing="2">IMAGE PLACEHOLDER</text>
+  <text x="400" y="430" text-anchor="middle" font-family="system-ui, sans-serif"
+        font-size="14" fill="#bbb">800 × 500</text>
+</svg>

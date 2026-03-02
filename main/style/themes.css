@@ -1,0 +1,39 @@
+/* =============================================================
+   themes.css — Color tokens for light and dark themes
+
+   Apply a theme class to <body>: class="theme-light" or "theme-dark"
+   All components reference these CSS custom properties — never
+   hardcode colors in component or slide CSS.
+   ============================================================= */
+
+/* ── Light theme ────────────────────────────────────────────── */
+.theme-light {
+  --color-bg:            #ffffff;
+  --color-bg-outer:      #d8d8d8;
+  --color-surface:       #f5f5f5;
+  --color-surface-alt:   #ebebeb;
+  --color-text-primary:  #111111;
+  --color-text-secondary:#555555;
+  --color-text-muted:    #999999;
+  --color-accent:        #0055cc;
+  --color-accent-hover:  #0044aa;
+  --color-border:        #e0e0e0;
+  --color-shadow:        rgba(0, 0, 0, 0.08);
+  --font-family:         'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Dark theme ─────────────────────────────────────────────── */
+.theme-dark {
+  --color-bg:            #0f0f0f;
+  --color-bg-outer:      #000000;
+  --color-surface:       #1a1a1a;
+  --color-surface-alt:   #252525;
+  --color-text-primary:  #f0f0f0;
+  --color-text-secondary:#aaaaaa;
+  --color-text-muted:    #666666;
+  --color-accent:        #4d9fff;
+  --color-accent-hover:  #6eb0ff;
+  --color-border:        #2e2e2e;
+  --color-shadow:        rgba(0, 0, 0, 0.45);
+  --font-family:         'Segoe UI', system-ui, -apple-system, sans-serif;
+}

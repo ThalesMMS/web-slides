@@ -1,0 +1,37 @@
+/*
+ * theme-minimal.css - Minimal preset (grayscale, neutral typography)
+ *
+ * How to use:
+ *   1. Copy the desired block to main/style/themes.css
+ *   2. Replace the existing .theme-light or .theme-dark block
+ */
+
+.theme-light {
+  --color-bg:            #fafafa;
+  --color-bg-outer:      #e4e4e4;
+  --color-surface:       #f2f2f2;
+  --color-surface-alt:   #eaeaea;
+  --color-text-primary:  #1a1a1a;
+  --color-text-secondary:#5c5c5c;
+  --color-text-muted:    #a0a0a0;
+  --color-accent:        #1a1a1a;
+  --color-accent-hover:  #333333;
+  --color-border:        #e0e0e0;
+  --color-shadow:        rgba(0, 0, 0, 0.06);
+  --font-family:         system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.theme-dark {
+  --color-bg:            #161616;
+  --color-bg-outer:      #0a0a0a;
+  --color-surface:       #1e1e1e;
+  --color-surface-alt:   #262626;
+  --color-text-primary:  #efefef;
+  --color-text-secondary:#999999;
+  --color-text-muted:    #555555;
+  --color-accent:        #efefef;
+  --color-accent-hover:  #ffffff;
+  --color-border:        #2e2e2e;
+  --color-shadow:        rgba(0, 0, 0, 0.5);
+  --font-family:         system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}

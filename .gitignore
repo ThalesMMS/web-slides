@@ -1,0 +1,8 @@
+**/CLAUDE.md
+.DS_Store
+.vscode/
+.idea/
+node_modules/
+/.playwright-cli
+/output
+/memory

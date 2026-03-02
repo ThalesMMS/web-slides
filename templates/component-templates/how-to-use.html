@@ -1,0 +1,121 @@
+<!--
+  ╔═══════════════════════════════════════════════════════════╗
+  ║  Component Usage Guide                                    ║
+  ╠═══════════════════════════════════════════════════════════╣
+  ║  Real components live in main/components/                ║
+  ║  This file shows how to include them in slides.          ║
+  ╚═══════════════════════════════════════════════════════════╝
+
+
+  ── slide-header ──────────────────────────────────────────────
+
+  Includes the presentation header (brand + section).
+  Edit the content in: main/components/slide-header.html
+
+    <div data-include="main/components/slide-header.html"></div>
+
+
+  ── slide-footer ──────────────────────────────────────────────
+
+  Includes the footer (presenter + year).
+  Edit the content in: main/components/slide-footer.html
+
+    <div data-include="main/components/slide-footer.html"></div>
+
+
+  ── slide-progress ──────────────────────────────────────────
+
+  Clickable progress bar that shows your current slide
+  and lets you jump to any other slide by clicking a segment.
+  Segments are generated automatically by app.js.
+  Place it right after the header (or before the footer):
+
+    <div data-include="main/components/slide-progress.html"></div>
+
+
+  ── title-box ─────────────────────────────────────────────
+
+  Title + subtitle box with an accent bar.
+  Copy this snippet directly into the slide and edit text:
+
+    <div class="title-box">
+      <div class="accent-bar"></div>
+      <h1 class="title">My Custom Title</h1>
+      <p class="subtitle">My subtitle</p>
+    </div>
+
+
+  ── resized-image ─────────────────────────────────────────
+
+  Image with configurable size using CSS variables.
+  Default: 400x300px, no crop (contain).
+
+  Basic usage (default size):
+
+    <div class="resized-image">
+      <img src="main/assets/my-image.png" alt="Description">
+    </div>
+
+  Custom size:
+
+    <div class="resized-image" style="--width: 500px; --height: 350px;">
+      <img src="main/assets/my-image.png" alt="Description">
+    </div>
+
+  Resize mode (`data-fit`):
+    contain    - fit entirely, no crop (default)
+    cover      - fill and crop overflow
+    fill       - stretch to fill exactly
+    scale-down - like contain, but never scales up
+
+    <div class="resized-image" data-fit="cover" style="--width: 500px; --height: 350px;">
+      <img src="main/assets/my-image.png" alt="Description">
+    </div>
+
+
+  ── resized-video ─────────────────────────────────────────
+
+  Video with configurable size, same pattern as resized-image.
+  Default: 400x225px, no crop (contain).
+
+  Basic usage:
+
+    <div class="resized-video">
+      <video src="main/assets/my-video.mp4" controls preload="metadata"></video>
+    </div>
+
+  Custom size and resize mode:
+
+    <div class="resized-video" data-fit="cover" style="--width: 600px; --height: 340px;">
+      <video src="main/assets/my-video.mp4" controls preload="metadata"></video>
+    </div>
+
+
+  ── image-frame (legacy) ────────────────────────────────────
+
+  Older wrapper kept for compatibility. Prefer resized-image.
+
+    <div class="image-frame" style="width: 700px; height: 450px;">
+      <img src="main/assets/my-image.png" alt="Description">
+    </div>
+
+
+  ── accent-bar ────────────────────────────────────────────────
+
+  Decorative colored line. Use inline where needed:
+
+    <div class="accent-bar"></div>
+
+  Customize color by overriding --color-accent in slide CSS.
+
+
+  ── bullet-list ───────────────────────────────────────────────
+
+  Bullet list with colored arrow markers.
+
+    <ul class="bullet-list">
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ul>
+-->

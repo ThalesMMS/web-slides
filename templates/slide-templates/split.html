@@ -1,0 +1,54 @@
+<!--
+  ╔═══════════════════════════════════════════════════════════╗
+  ║  TEMPLATE: Split Slide (two columns)                     ║
+  ╠═══════════════════════════════════════════════════════════╣
+  ║  How to use:                                              ║
+  ║  1. Copy this file to main/slides/XX/slide-XX.html       ║
+  ║  2. Edit each column's content                            ║
+  ║  3. Add to manifest: main/slides/slides.js               ║
+  ╚═══════════════════════════════════════════════════════════╝
+
+  Notes:
+  - Split layout, ideal for using full width.
+  - Each column can contain any combination of components:
+    title-box, bullet-list, resized-image, resized-video, etc.
+-->
+
+<div class="slide slide-split">
+
+  <div data-include="main/components/slide-header.html"></div>
+  <div data-include="main/components/slide-progress.html"></div>
+
+  <main class="slide-main slide-main--columns">
+
+    <!-- Left column -->
+    <div class="column">
+      <div class="title-box">
+        <h2 class="title">Left Title</h2>
+        <div class="accent-bar"></div>
+        <p class="subtitle">Supporting text for the left column.</p>
+      </div>
+      <ul class="bullet-list">
+        <li>Point A</li>
+        <li>Point B</li>
+      </ul>
+    </div>
+
+    <!-- Right column -->
+    <div class="column">
+      <div class="title-box">
+        <h2 class="title">Right Title</h2>
+        <div class="accent-bar"></div>
+        <p class="subtitle">Supporting text for the right column.</p>
+      </div>
+      <ul class="bullet-list">
+        <li>Point C</li>
+        <li>Point D</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <div data-include="main/components/slide-footer.html"></div>
+
+</div>
