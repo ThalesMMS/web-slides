@@ -21,6 +21,20 @@ python -m http.server 8000
 
 Open `http://localhost:3000` (or the port shown) to view the presentation.
 
+## First 60 Seconds
+
+1. Open the sample deck and click through the four example slides.
+2. Edit `main/slides/02/slide-02.html` to change real slide content first.
+3. Refresh the browser to verify the deck reload loop.
+4. When you want a new slide, copy a template from `templates/slide-templates/` and register it in `main/slides/slides.js`.
+
+### What you should notice
+
+- Slide order comes from `main/slides/slides.js`
+- Global deck settings live in `config.js`
+- Shared header, progress, and footer live in `main/components/`
+- Images and video examples already point to `main/assets/`
+
 ---
 
 ## Project Structure
